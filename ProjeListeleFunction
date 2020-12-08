@@ -1,0 +1,14 @@
+private static void ProjeListeleId() // Proje listesini maliyete gore sirala
+        {
+            Console.WriteLine("Proje ID'lerini artandan azalana sıralamak için: 1, azalandan artana sıralamak için: 2, ");
+            int i = Convert.ToInt32(Console.ReadLine());
+            if (i == 1)
+            { IEnumerable<Proje> siralaId = projeler.OrderByDescending(item => item.projeId); //ID'ye gore siralamak icin OrderBy()
+                Console.WriteLine("Proje tablosu artandan azalana, proje ID'lerine göre sıralanırsa: ");
+                foreach(Proje item in siralaId)
+                {  
+                    Console.WriteLine("#{0}    -    {1}    -     {2}    -    {3}    -    {4}(TL)   -    {5} ay ",
+                        item.projeId, item.projeIsim, item.ProjeEndustri, item.projeKisi, item.projeMaliyet,
+                        item.projeSure);
+                }
+            }
