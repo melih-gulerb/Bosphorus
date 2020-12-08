@@ -1,0 +1,7 @@
+43534   , Hava Araçlarında Yakıt Çalkalanması           , Uçak             ,      2     ,   40000,           6
+43325   , Aktif Süspansiyon Sistemi                     , Otomotiv         ,      6     ,   4000 ,           9
+11232   , Otonom Robot Süpürge                          , Ev aletleri      ,      4     ,   7000 ,           3
+43232   , Arka Kanat Kontrolü                           , Otomotiv         ,      2     ,   5000 ,           9
+24321   , Scabiosa.L Cinsinin Revizyonu                 , Biyoloji         ,      1     ,   10000,           3
+11020   , E5000 Tip Elektrikli Lokomotif Geliştirilmesi , Raylı Sistemler  ,      5     ,   20000,           8
+53124   , Kuantum Haberleşme Ağı                        , Elektronik       ,      3     ,   6000 ,           4
