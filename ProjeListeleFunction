@@ -12,3 +12,14 @@ private static void ProjeListeleId() // Proje listesini maliyete gore sirala
                         item.projeSure);
                 }
             }
+            else if (i == 2)
+            { IEnumerable<Proje> siralaId = projeler.OrderBy(item => item.projeId).ToList();
+                Console.WriteLine("Proje tablosu azalandan artana, proje ID'lerine göre sıralanırsa: ");
+                foreach(Proje item in siralaId)
+                { 
+                    Console.WriteLine("#{0}    -    {1}    -     {2}    -    {3}    -    {4}(TL)   -    {5} ay ",
+                        item.projeId, item.projeIsim, item.ProjeEndustri, item.projeKisi, item.projeMaliyet,
+                        item.projeSure);
+                }
+            }
+        }
