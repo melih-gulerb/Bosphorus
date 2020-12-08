@@ -1,0 +1,21 @@
+class Proje
+    {
+        public string projeId { get;  }
+        public string projeIsim { get; }
+        public string ProjeEndustri { get; }
+        public string projeKisi { get; }
+        public string projeMaliyet { get; }
+        public string projeSure { get; }
+
+        public Proje(string projeId,       string projeIsim,
+                     string projeEndustri, string projeKisi,
+                     string projeMaliyet,  string projeSure)
+        {
+            this.projeId = projeId;    //Ustte olusturulan string terimlerini Proje class'ına tanımlamak icin this. komutu 
+            this.projeIsim = projeIsim;
+            ProjeEndustri = projeEndustri;
+            this.projeKisi = projeKisi;
+            this.projeMaliyet = projeMaliyet;
+            this.projeSure = projeSure;
+        }
+    }
