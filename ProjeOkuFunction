@@ -1,0 +1,17 @@
+ public static void ProjeOku()
+        {
+            
+            const string yol = @"C:\Users\Melih\Desktop\2020-2021 #Güz\Object Oriented Programming\Bosphorus\ProjeListDeneme.txt"; //Projelerin bulundugu .csv uzantisi
+            StreamReader sr = new StreamReader(yol);
+            var text = sr.ReadToEnd();
+            var rows = text.Split("\r\n".ToCharArray());
+            foreach (var row in rows)
+            {
+                if (string.IsNullOrEmpty(row)) continue;
+                var cell = row.Split(',');
+                projeler.Add(new Proje(cell[0], cell[1], cell[2], cell[3], cell[4], cell[5]));
+
+                Console.WriteLine("#{0}    -    {1}    -     {2}    -    {3}    -    {4}TL   -    {5} ay ",
+                                cell[0]    ,cell[1]    , cell[2]    ,cell[3]    ,cell[4]     ,cell[5]); // Proje listesini ekrana yansit
+            }
+        }
