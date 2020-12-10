@@ -1,0 +1,26 @@
+public static void Main(string[] args)
+        {
+            ProjeOku(); //Projeleri List'e yerlestirmek icin
+            
+            Console.WriteLine("Sıralamak istediğiniz parametreyi seçin, Proje ID: 1, Proje İsmi: 2 ");
+            int  operatorSec = Convert.ToInt32(Console.ReadLine());
+            switch (operatorSec)
+            {
+             case 1:
+                 ProjeListeleId();
+                 break;
+             case 2:
+                 ProjeListeleIsim();
+                 break;
+             // en son buradayim #3.12.2020
+             case 3:
+                 ProjeIDler();
+                 break;
+             case 4:
+                 ProjeGruplaEndustri();
+                 break;
+             default :
+                 Console.WriteLine("Yanlış değer ");
+                 break;
+            }
+        }
